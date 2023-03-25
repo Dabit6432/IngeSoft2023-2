@@ -1,2 +1,3 @@
-# IngeSoft2023-2
-Este es el RADME
+# IngeSoft2023-2 Actividad1
+#Nombre: David Jonathan Lázaro Pérez
+#Cuenta: 316059710
