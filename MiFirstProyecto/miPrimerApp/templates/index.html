@@ -43,13 +43,39 @@
                     <div class="col-lg-8">
                         <h2>Consultas BD</h2>
                         <p class="lead">Grupo 1</p>
-                        {% for i in grupo1 %}
-                        {{i}} <br>
-                        {% endfor %}
+                        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-3 justify-content">
+                            {% for i in grupo1 %}
+                            <div class="card" style="width: 18rem;">
+                                <img src="{{i.imagen}}" alt="" class="card-img-top">
+                                <div class="card-body">
+                                  <h4 class="card-title">{{i.nombres}} {{i.apellidos}}</h4>  
+                                  <h5 class="card-title">#Cuenta: {{i.numCta}}</h5>
+                                  <h6 class="card-title">Edad: {{i.edad}}</h6>
+                                  <p class="card-text">El estudiante pertenece al grupo {{i.grupo.id_grupo}}</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        
                         <p class="lead">Grupo 4</p>
-                        {% for i in grupo4 %}
-                        {{i}} <br>
-                        {% endfor %}
+                        
+                        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-3 justify-content">
+                            {% for i in grupo4 %}
+                            <div class="card" style="width: 18rem;">
+                                <img src="{{i.imagen}}" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">{{i.nombres}} {{i.apellidos}}</h4>  
+                                    <h5 class="card-title">#Cuenta: {{i.numCta}}</h5>
+                                    <h6 class="card-title">Edad: {{i.edad}}</h6>
+                                    <p class="card-text">El estudiante pertenece al grupo {{i.grupo.id_grupo}}</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        
                         <p class="lead">Mismo apellido</p>
                         {% for i in apellidosEq %}
                         {{i}} <br>
